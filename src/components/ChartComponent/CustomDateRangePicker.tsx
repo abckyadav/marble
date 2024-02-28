@@ -4,7 +4,7 @@ import { data } from "../../data";
 import { DataItem } from "../../interfaces";
 import { useState } from "react";
 import "react-date-range/dist/styles.css";
-import "react-date-range/dist/theme/default.css"; 
+import "react-date-range/dist/theme/default.css";  //
 import { IoCloseSharp } from "react-icons/io5";
 
 const CustomDateRangePicker = () => {
