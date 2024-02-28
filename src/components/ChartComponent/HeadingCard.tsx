@@ -1,5 +1,5 @@
 import { HeadingData } from "../../data/index";
-import { HeadItem } from "./HeadingItems";
+import { HeadingItems } from "./HeadingItems";
 import {
   MdOutlineKeyboardArrowDown,
   MdOutlineKeyboardArrowUp,
@@ -13,7 +13,7 @@ const HeadingCard = ({ SetActive, ActiveStore }: any) => {
   return (
     <div className="w-[90%] m-auto   sm:px-8 py-6 flex flex-col sm:flex-row gap-4 lg:gap-8">
       {HeadingData.map((heading, index) => (
-        <HeadItem
+        <HeadingItems
           key={index}
           index={index}
           title={heading.Title}

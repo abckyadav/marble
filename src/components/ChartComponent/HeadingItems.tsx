@@ -2,8 +2,8 @@ import { FaPencilAlt } from "react-icons/fa";
 import { BiSolidUpArrow } from "react-icons/bi";
 import { SetStateAction, useState } from "react";
 import { Tooltip, Typography } from "@material-tailwind/react";
-import TrendMenu from "../../assets/TrendMenu.svg";
-import TrendQuestion from "../../assets/TrendQuestion.svg";
+import TrendingIcon from "../../assets/TrendingIcon.svg";
+import TrendingQuestionIcon from "../../assets/TrendingQuestionIcon.svg";
 import { Menulist } from "../../data/index";
 
 export const HeadingItems = ({ title, total, per, index }: any) => {
@@ -94,7 +94,7 @@ export const HeadingItems = ({ title, total, per, index }: any) => {
                     >
                       <div className="flex items-center gap-3">
                         <img
-                          src={TrendMenu}
+                          src={TrendingIcon}
                           className="w-4 h-4"
                           alt="Trend Icon"
                         />
@@ -102,7 +102,7 @@ export const HeadingItems = ({ title, total, per, index }: any) => {
                       </div>
                       {menuHoveredIndex === index && (
                         <img
-                          src={TrendQuestion}
+                          src={TrendingQuestionIcon}
                           className="w-4 h-4 ml-5 self-end"
                           alt="Trend Icon"
                         />

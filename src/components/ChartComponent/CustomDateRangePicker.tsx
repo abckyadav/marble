@@ -3,8 +3,8 @@ import { DateRangePicker } from "react-date-range";
 import { data } from "../../data";
 import { DataItem } from "../../interfaces";
 import { useState } from "react";
-import "react-date-range/dist/styles.css"; // main style file
-import "react-date-range/dist/theme/default.css"; // theme css file
+import "react-date-range/dist/styles.css";
+import "react-date-range/dist/theme/default.css"; 
 import { IoCloseSharp } from "react-icons/io5";
 
 const CustomDateRangePicker = () => {
@@ -45,20 +45,20 @@ const CustomDateRangePicker = () => {
         Select Date
       </button>
 
-      {/* Modal for Date Range Picker */}
+    
       <Modal
         isOpen={showModal}
         onRequestClose={closeModal}
         contentLabel="Date Range Modal"
         style={{
           content: {
-            zIndex: 10, // Custom z-index
+            zIndex: 10, 
             top: "55%",
             left: "50%",
             right: "auto",
             bottom: "auto",
             marginRight: "-50%",
-            transform: "translate(-50%, -50%)", // Center modal
+            transform: "translate(-50%, -50%)", 
           },
         }}
       >

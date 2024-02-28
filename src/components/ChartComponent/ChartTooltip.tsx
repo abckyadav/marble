@@ -1,6 +1,6 @@
-import LineImage from "../../assets/Line 3.png";
+import LineImage from "../../assets/darkBlue.svg";
 import { FaArrowTrendDown, FaArrowTrendUp } from "react-icons/fa6";
-import lightline from "../../assets/lightline.svg";
+import lightBlue from "../../assets/lightBlue.svg";
 
 export const ChartTooltip = ({ active, payload, coordinate, data }: any) => {
   if (active && payload && payload.length && data && data.length >= 2) {
@@ -44,7 +44,7 @@ export const ChartTooltip = ({ active, payload, coordinate, data }: any) => {
           </p>
 
           <p className="text-xs py-1 flex items-center gap-2">
-            <img className="m-1 p-1" src={lightline} alt="Line" />
+            <img className="m-1 p-1" src={lightBlue} alt="Line" />
             {`${previousMonthData.date} `}
             <span className="p-1 font-semibold">{previousMonthData.pv}</span>
           </p>

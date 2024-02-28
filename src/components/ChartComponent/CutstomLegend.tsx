@@ -1,5 +1,5 @@
-import Line from "../../assets/Line 3.png";
-import lightline from "../../assets/lightline.svg";
+import Line from "../../assets/darkBlue.svg";
+import lightBlue from "../../assets/lightBlue.svg";
 
 export const CustomLegend = ({ data }: any) => {
   const firstMonth = data[0].date;
@@ -16,7 +16,7 @@ export const CustomLegend = ({ data }: any) => {
           <p className="text-[##E7E7E7] px-1 font-serif">{` -  ${lastMonth}`}</p>
         </div>
         <div className="flex rounded text-[.7rem] sm:px-4 py-1 font-Inter bg-[#F1F1F1] items-center">
-          <img className="m-1 p-1" src={lightline} />
+          <img className="m-1 p-1" src={lightBlue} />
           <p className="text-[##E7E7E7] px-1 font-serif">{` ${firstMonth}`}</p>
           <p className="text-[##E7E7E7] px-1 font-serif">{` -  ${lastMonth}`}</p>
         </div>
