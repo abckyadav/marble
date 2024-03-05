@@ -2,6 +2,8 @@ import { Text } from "recharts";
 
 export const CustomYAxisTick = (props: any) => {
   const { x, y, payload } = props;
+  console.log('y:', y)
+  console.log('x:', x)
   const formattedTick =
     payload.value >= 1000
       ? `${Math.round(payload.value / 1000)}k`

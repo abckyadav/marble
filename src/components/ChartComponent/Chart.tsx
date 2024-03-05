@@ -31,7 +31,7 @@ const Chart: React.FC = () => {
       <div>
         <CustomDateRangePicker />
       </div>
-      <ResponsiveContainer height={400}>
+      <ResponsiveContainer height={300}>
         <LineChart
           height={400}
           data={selectedData}

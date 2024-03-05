@@ -1,6 +1,6 @@
-import LineImage from "../../assets/darkBlue.svg";
 import { FaArrowTrendDown, FaArrowTrendUp } from "react-icons/fa6";
 import lightBlue from "../../assets/lightBlue.svg";
+import LineImage from "../../assets/darkBlue.svg";
 
 export const ChartTooltip = ({ active, payload, coordinate, data }: any) => {
   if (active && payload && payload.length && data && data.length >= 2) {
