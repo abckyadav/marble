@@ -5,7 +5,7 @@ import {
   MdOutlineKeyboardArrowUp,
 } from "react-icons/md";
 
-const HeadingCard = ({ SetActive, ActiveStore }: any) => {
+const HeadingCard = ({ SetActive, active }: any) => {
   const handleActive = () => {
     SetActive((prev: any) => !prev);
   };
@@ -24,7 +24,7 @@ const HeadingCard = ({ SetActive, ActiveStore }: any) => {
 
       <div className="m-auto">
         <button onClick={handleActive} className="m-auto">
-          {ActiveStore ? (
+          {active ? (
             <MdOutlineKeyboardArrowDown className="text-3xl text-[##E7E7E7]" />
           ) : (
             <MdOutlineKeyboardArrowUp className="text-3xl text-[##E7E7E7]" />

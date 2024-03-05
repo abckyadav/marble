@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
 import Chart from "./Chart";
-import Head from "./HeadingCard";
+import HeadingCard from "./HeadingCard";
 import Skeleton from "../Skelton/Skeleton";
 
-
 const DashboardChart = () => {
-  const [ActiveStore, SetActive] = useState(true);
+  const [active, SetActive] = useState(true);
   const [loading, SetLoading] = useState(false);
 
   useEffect(() => {
@@ -22,9 +21,9 @@ const DashboardChart = () => {
             className=" drop-shadow-md rounded-2xl bg-[#FFFFFF] mt-5
       px-4 py-4 w-[95%] m-auto  border-red-700"
           >
-            <Head SetActive={SetActive} ActiveStore={ActiveStore} />
+            <HeadingCard SetActive={SetActive} active={active} />
 
-            {ActiveStore && <Chart />}
+            {active && <Chart />}
           </div>
         ) : (
           <Skeleton />
